@@ -101,3 +101,15 @@ export interface Expense {
 }
 
 export interface Settlement {
+    id: string;
+    tripId: string;
+    fromUserId: string;
+    toUserId: string;
+    amount: number;
+    currency: string;
+    date: any; // Timestamp
+    paymentMethod?: string;
+    note?: string;
+    status?: 'pending' | 'completed';
+    createdAt?: any; // Timestamp
+}
