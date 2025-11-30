@@ -1,7 +1,13 @@
 const { GoogleGenerativeAI } = require("@google/generative-ai");
+require('dotenv').config({ path: '.env.local' });
 
-// Manually load env vars since we are running with node directly
-const apiKey = "AIzaSyCeaAqeCRD1QQXjCtxrLdrp80piRRp4XnE"; // Hardcoded from previous view_file of .env.local
+// Load API key from environment variable
+const apiKey = process.env.GEMINI_API_KEY;
+
+if (!apiKey) {
+    console.error("GEMINI_API_KEY not found in environment variables");
+    process.exit(1);
+}
 
 const genAI = new GoogleGenerativeAI(apiKey);
 
