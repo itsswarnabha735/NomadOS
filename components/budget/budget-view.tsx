@@ -67,7 +67,7 @@ export function BudgetView({ trip, userId, activities }: BudgetViewProps) {
                 if (snap.exists()) {
                     const data = snap.data();
                     setOwner({
-                        id: trip.ownerId,
+                        id: trip.ownerId!,
                         name: data.displayName || "Owner"
                     });
                 }
