@@ -1,0 +1,43 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e1]:
+  - generic [ref=e2]:
+    - generic [ref=e3]:
+      - generic [ref=e6]:
+        - img [ref=e8]
+        - generic [ref=e10]: NomadOS
+      - blockquote [ref=e12]:
+        - paragraph [ref=e13]: "\"The world is a book and those who do not travel read only one page.\""
+        - contentinfo [ref=e14]: — Augustine of Hippo
+    - generic [ref=e16]:
+      - generic [ref=e17]:
+        - heading "Welcome back" [level=1] [ref=e18]
+        - paragraph [ref=e19]: Enter your email to sign in to your account
+      - generic [ref=e20]:
+        - generic [ref=e22]:
+          - generic [ref=e23]:
+            - generic [ref=e24]: Email
+            - textbox "Email" [ref=e25]:
+              - /placeholder: name@example.com
+              - text: itsswarnabha@gmail.com
+          - generic [ref=e26]:
+            - generic [ref=e27]: Password
+            - textbox "Password" [active] [ref=e28]: P@ssw0rd
+          - button "Sign In with Email" [ref=e29]
+        - generic [ref=e34]: Or continue with
+        - generic [ref=e35]:
+          - button "Google" [ref=e36]:
+            - img
+            - text: Google
+          - button "Github" [ref=e37]:
+            - img
+            - text: Github
+        - paragraph [ref=e38]:
+          - text: Don't have an account?
+          - link "Sign up" [ref=e39] [cursor=pointer]:
+            - /url: /signup
+  - button "Open Next.js Dev Tools" [ref=e45] [cursor=pointer]:
+    - img [ref=e46]
+  - alert [ref=e49]
+```
