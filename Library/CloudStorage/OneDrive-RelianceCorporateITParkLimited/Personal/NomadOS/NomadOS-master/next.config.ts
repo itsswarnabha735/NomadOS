@@ -6,10 +6,6 @@ const nextConfig: NextConfig = {
       bodySizeLimit: '10mb',
     },
   },
-  eslint: {
-    // Disable ESLint during builds to speed up deployment
-    ignoreDuringBuilds: true,
-  },
 };
 
 export default nextConfig;
