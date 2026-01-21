@@ -1,0 +1,115 @@
+[dotenv@17.2.3] injecting env (10) from .env.local -- tip: ⚙️  write to custom object with { processEnv: myObject }
+🧩 Generating 50+ Test Scenarios...
+Generated 50 scenarios. Running Benchmark...
+[1/50] Testing Linear Route (5 stops)... PASS (0.0% impr)
+[2/50] Testing Linear Route (7 stops)... PASS (0.0% impr)
+[3/50] Testing Linear Route (9 stops)... PASS (0.0% impr)
+[4/50] Testing Linear Route (11 stops)... PASS (0.0% impr)
+[5/50] Testing Linear Route (13 stops)... PASS (0.0% impr)
+[6/50] Testing Linear Route (15 stops)... PASS (0.0% impr)
+[7/50] Testing Circular Route (5 stops)... PASS (0.0% impr)
+[8/50] Testing Circular Route (7 stops)... PASS (0.0% impr)
+[9/50] Testing Circular Route (9 stops)... PASS (0.0% impr)
+[10/50] Testing Circular Route (11 stops)... PASS (0.0% impr)
+[11/50] Testing Circular Route (13 stops)... PASS (0.0% impr)
+[12/50] Testing Circular Route (15 stops)... FAIL (0.0% impr)
+[13/50] Testing Clusters (2 groups of 4)... FAIL (0.0% impr)
+[14/50] Testing Clusters (3 groups of 4)... FAIL (0.0% impr)
+[15/50] Testing Clusters (2 groups of 8)... FAIL (0.0% impr)
+[16/50] Testing Clusters (4 groups of 3)... FAIL (0.0% impr)
+[17/50] Testing Random Scatter 0 (7 stops)... FAIL (0.0% impr)
+[18/50] Testing Random Scatter 1 (11 stops)... FAIL (0.0% impr)
+[19/50] Testing Random Scatter 2 (9 stops)... FAIL (0.0% impr)
+[20/50] Testing Random Scatter 3 (10 stops)... FAIL (0.0% impr)
+[21/50] Testing Random Scatter 4 (7 stops)... FAIL (0.0% impr)
+[22/50] Testing Random Scatter 5 (7 stops)... FAIL (0.0% impr)
+[23/50] Testing Random Scatter 6 (9 stops)... FAIL (0.0% impr)
+[24/50] Testing Random Scatter 7 (7 stops)... FAIL (0.0% impr)
+[25/50] Testing Random Scatter 8 (9 stops)... FAIL (0.0% impr)
+[26/50] Testing Random Scatter 9 (4 stops)... FAIL (0.0% impr)
+[27/50] Testing Random Scatter 10 (10 stops)... FAIL (0.0% impr)
+[28/50] Testing Random Scatter 11 (6 stops)... FAIL (0.0% impr)
+[29/50] Testing Random Scatter 12 (5 stops)... FAIL (0.0% impr)
+[30/50] Testing Random Scatter 13 (4 stops)... FAIL (0.0% impr)
+[31/50] Testing Random Scatter 14 (10 stops)... FAIL (0.0% impr)
+[32/50] Testing Random Scatter 15 (8 stops)... FAIL (0.0% impr)
+[33/50] Testing Random Scatter 16 (9 stops)... FAIL (0.0% impr)
+[34/50] Testing Random Scatter 17 (10 stops)... FAIL (0.0% impr)
+[35/50] Testing Random Scatter 18 (4 stops)... FAIL (0.0% impr)
+[36/50] Testing Random Scatter 19 (6 stops)... FAIL (0.0% impr)
+[37/50] Testing Random Scatter 20 (7 stops)... FAIL (0.0% impr)
+[38/50] Testing Random Scatter 21 (4 stops)... FAIL (0.0% impr)
+[39/50] Testing Random Scatter 22 (6 stops)... FAIL (0.0% impr)
+[40/50] Testing Random Scatter 23 (8 stops)... FAIL (0.0% impr)
+[41/50] Testing Random Scatter 24 (10 stops)... FAIL (0.0% impr)
+[42/50] Testing Random Scatter 25 (4 stops)... FAIL (0.0% impr)
+[43/50] Testing Random Scatter 26 (8 stops)... FAIL (0.0% impr)
+[44/50] Testing Random Scatter 27 (9 stops)... FAIL (0.0% impr)
+[45/50] Testing Random Scatter 28 (11 stops)... FAIL (0.0% impr)
+[46/50] Testing Random Scatter 29 (5 stops)... FAIL (0.0% impr)
+[47/50] Testing Random Scatter 30 (5 stops)... FAIL (0.0% impr)
+[48/50] Testing Random Scatter 31 (6 stops)... FAIL (0.0% impr)
+[49/50] Testing Random Scatter 32 (8 stops)... FAIL (0.0% impr)
+[50/50] Testing Random Scatter 33 (8 stops)... FAIL (0.0% impr)
+
+--- BENCHMARK COMPLETE ---
+
+Total: 50
+Pass: 11
+Fail: 39
+Regression: 0
+Avg Improvement: 0.00%
+
+CSV_DATA_START
+ID,Type,Stops,OrigDist,OptDist,Impr%,Status,TimeMs
+linear_5,linear,5,4.0,4.0,0.0,PASS,1199
+linear_7,linear,7,6.0,6.0,0.0,PASS,927
+linear_9,linear,9,8.0,8.0,0.0,PASS,919
+linear_11,linear,11,10.0,10.0,0.0,PASS,1020
+linear_13,linear,13,12.0,12.0,0.0,PASS,1032
+linear_15,linear,15,14.0,14.0,0.0,PASS,1197
+circle_5,circular,5,23.5,23.5,0.0,PASS,885
+circle_7,circular,7,26.0,26.0,0.0,PASS,1070
+circle_9,circular,9,27.4,27.4,0.0,PASS,998
+circle_11,circular,11,28.2,28.2,0.0,PASS,1063
+circle_13,circular,13,28.7,28.7,0.0,PASS,1019
+circle_15,circular,15,29.1,-1.0,0.0,FAIL,94
+clusters_2x4,cluster,8,34.1,-1.0,0.0,FAIL,160
+clusters_3x4,cluster,12,61.5,-1.0,0.0,FAIL,102
+clusters_2x8,cluster,16,42.8,-1.0,0.0,FAIL,159
+clusters_4x3,cluster,12,92.9,-1.0,0.0,FAIL,128
+random_0,random,7,49.8,-1.0,0.0,FAIL,140
+random_1,random,11,111.2,-1.0,0.0,FAIL,166
+random_2,random,9,62.5,-1.0,0.0,FAIL,99
+random_3,random,10,117.2,-1.0,0.0,FAIL,173
+random_4,random,7,53.0,-1.0,0.0,FAIL,96
+random_5,random,7,79.7,-1.0,0.0,FAIL,176
+random_6,random,9,87.5,-1.0,0.0,FAIL,96
+random_7,random,7,84.2,-1.0,0.0,FAIL,172
+random_8,random,9,83.3,-1.0,0.0,FAIL,82
+random_9,random,4,36.0,-1.0,0.0,FAIL,202
+random_10,random,10,80.3,-1.0,0.0,FAIL,83
+random_11,random,6,34.7,-1.0,0.0,FAIL,182
+random_12,random,5,47.6,-1.0,0.0,FAIL,113
+random_13,random,4,35.3,-1.0,0.0,FAIL,150
+random_14,random,10,106.3,-1.0,0.0,FAIL,112
+random_15,random,8,73.7,-1.0,0.0,FAIL,83
+random_16,random,9,68.3,-1.0,0.0,FAIL,175
+random_17,random,10,92.5,-1.0,0.0,FAIL,98
+random_18,random,4,29.3,-1.0,0.0,FAIL,147
+random_19,random,6,61.1,-1.0,0.0,FAIL,111
+random_20,random,7,58.3,-1.0,0.0,FAIL,137
+random_21,random,4,27.6,-1.0,0.0,FAIL,121
+random_22,random,6,52.9,-1.0,0.0,FAIL,146
+random_23,random,8,63.6,-1.0,0.0,FAIL,106
+random_24,random,10,93.7,-1.0,0.0,FAIL,162
+random_25,random,4,27.8,-1.0,0.0,FAIL,112
+random_26,random,8,92.0,-1.0,0.0,FAIL,155
+random_27,random,9,94.3,-1.0,0.0,FAIL,95
+random_28,random,11,103.1,-1.0,0.0,FAIL,160
+random_29,random,5,66.6,-1.0,0.0,FAIL,90
+random_30,random,5,37.4,-1.0,0.0,FAIL,164
+random_31,random,6,31.9,-1.0,0.0,FAIL,93
+random_32,random,8,48.2,-1.0,0.0,FAIL,175
+random_33,random,8,63.5,-1.0,0.0,FAIL,108
+CSV_DATA_END
